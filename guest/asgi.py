@@ -1,3 +1,4 @@
+# !/usr/bin/env python3
 """
 ASGI config for guest project.
 

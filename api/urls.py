@@ -1,4 +1,4 @@
-#!C:\Users\wb.yexulong\AppData\Local\Programs\Python\Python37\python.exe
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from django.urls import path
 from api.views import sign_api, sign_api_sec
