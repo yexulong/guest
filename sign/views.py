@@ -1,5 +1,5 @@
 from django.contrib import auth
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
@@ -74,6 +74,7 @@ def guest_manage(request):
 
 # 手机号搜索
 @login_required
+# @permission_required
 def search_phone(request):
     username = request.session.get('user', '')
     search_phone_parm = request.GET.get('phone', '')
