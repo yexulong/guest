@@ -12,7 +12,7 @@ def trans_title(path):
             music_file.tag.title = title
             music_file.tag.artist = artist
             
-            music_file.save()
+            music_file.tag.save()
 
     
 if __name__ == '__main__':
